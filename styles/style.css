@@ -13,4 +13,192 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--main-font-weight);
+
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 100px 0;
+}
+
+.container {
+  width: var(--container-width);
+  margin-inline: auto;
+}
+
+.header {
+  margin-inline: auto;
+  background-color: #fff;
+  margin: 100px auto;
+  border: 2px solid #000;
+}
+
+.logo {
+  text-align: center;
+  font-family: var(--accent-font);
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  padding: clamp(7.5rem, 6.9159rem + 2.4922vw, 8rem) 0;
+}
+
+.logo__title {
+  font-weight: 400;
+  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
+  text-transform: uppercase;
+  color: #000;
+}
+
+.logo__subtitle {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.card__title {
+  font-variation-settings: "wght" var(--title-font-weight);
+  font-size: 18px;
+  color: #000;
+  display: grid;
+  padding: 4px 10px;
+}
+
+.card__image-wrapper {
+  position: relative;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: clamp(23.4375rem, 0rem + 100vw, 43.75rem);
+}
+
+.card__label {
+  font-family: var(--accent-font);
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+
+  --stroke-color: #ffffff;
+
+  text-shadow:
+    -1px -1px 0 var(--stroke-color),
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color);
+}
+
+@supports (
+  (-webkit-text-stroke: 1px var(--stroke-color)) or (text-stroke: 1px var(--stroke-color))
+) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
+
+    text-shadow: none;
+  }
+}
+
+.card__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-position: center;
+}
+
+.card__content {
+  display: grid;
+  gap: 25px;
+
+  padding: 25px;
+  font-size: 18px;
+  line-height: 117%;
+  color: #000;
+}
+
+.card__buttons {
+  padding: 0 25px 25px 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.card__icon-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.like-icon {
+}
+
+.card__like-button {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  color: #000;
+  block-size: 38px;
+  inline-size: 130px;
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.save-button {
+  block-size: 84px;
+  inline-size: 306px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  gap: 8px;
+
+  border: 2px solid #000;
+  background: #fff;
+  margin: 50px auto 0;
+}
+
+.save-button__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.save-button__text {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+}
+
+@media (min-width: 1440px) {
+  .save-button {
+    display: flex;
+    justify-content: center;
+    block-size: 55px;
+    inline-size: 335px;
+  }
+
+  .save-button__icon {
+    width: 21px;
+    height: 21px;
+  }
 }

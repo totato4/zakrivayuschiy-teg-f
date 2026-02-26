@@ -1,1 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter", "Arial", "Helvetica", sans-serif;
+  --accent-font: "PressStart2P", "Courier New", monospace;
+
+  --main-font-weight: 410;
+  --title-font-weight: 715;
+
+  --background-gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --container-width: clamp(375px, 42.86vw + 214px, 700px);
+}
