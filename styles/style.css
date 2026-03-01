@@ -152,35 +152,35 @@
 }
 
 .card__image_brightness {
-  filter: brightness(30%);
+  filter: brightness(30%) contrast(150%) saturate(80%);
 }
 
 .card__image_contrast {
-  filter: contrast(250%);
+  filter: contrast(250%) brightness(85%) saturate(130%);
 }
 
 .card__image_grayscale {
-  filter: grayscale(80%);
+  filter: grayscale(80%) sepia(0.2) brightness(90%);
 }
 
 .card__image_hue-rotate {
-  filter: hue-rotate(0.5turn);
+  filter: hue-rotate(0.5turn) saturate(200%) brightness(95%);
 }
 
 .card__image_invert {
-  filter: invert(30%);
+  filter: invert(30%) hue-rotate(180deg) brightness(90%);
 }
 
 .card__image_opacity {
-  filter: opacity(40%);
+  filter: opacity(40%) brightness(110%) contrast(90%);
 }
 
 .card__image_saturate {
-  filter: saturate(390%);
+  filter: saturate(390%) brightness(90%) contrast(120%);
 }
 
 .card__image_sepia {
-  filter: sepia(0.6);
+  filter: sepia(0.6) grayscale(20%) brightness(95%);
 }
 
 .card__content {
