@@ -12,4 +12,13 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --container-width: clamp(375px, 42.86vw + 214px, 700px);
+
+  --button-text-color: #fff;
+  --button-bg-color: #fff;
+  --button-border-color: #000;
+  --button-overlay-color: #000;
+  --button-mix-blend-mode: difference;
+
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
 }
