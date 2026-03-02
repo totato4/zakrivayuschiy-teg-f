@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -36,7 +39,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -72,7 +75,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -97,7 +100,7 @@
           <p>Место для ваших воспоминаний о начале первого спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -133,7 +136,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -157,7 +160,7 @@
           <p>Место для ваших воспоминаний об окончании первого спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -193,7 +196,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -218,7 +221,7 @@
           <p>Место для ваших воспоминаний о начале второго спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -254,7 +257,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -279,7 +282,7 @@
           <p>Место для ваших воспоминаний об окончании второго спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -315,7 +318,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -338,7 +341,7 @@
           <p>Место для ваших воспоминаний о начале третьего спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -374,7 +377,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -399,7 +402,7 @@
           <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -435,7 +438,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -463,7 +466,7 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button" aria-label="Like">
+          <button class="card__icon-button" type="button" aria-label="Like">
             <svg
               class="like-icon"
               width="39"
@@ -499,22 +502,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-    </main>
-    <footer class="footer container">
       <button
         class="save-button button"
         onclick="window['dialog-id'].showModal()"
+        type="button"
         aria-controls="dialog-id"
       >
         <svg class="save-button__icon disc" viewBox="0 0 28 28">
           <use href="svg/save.svg"></use>
         </svg>
-        <span class="save-button__text button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="dialog-id">
         <div class="dialog__content">
@@ -524,11 +526,12 @@
           <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
 
-        <button class="dialog__button button" onclick="window['dialog-id'].close()">
+        <button class="dialog__button button" onclick="window['dialog-id'].close()" type="button">
           <span class="button__text">ок</span>
         </button>
       </dialog>
-    </footer>
+    </main>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>

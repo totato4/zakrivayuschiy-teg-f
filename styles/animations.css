@@ -30,17 +30,3 @@
     transform: scale(1.25);
   }
 }
-
-.like-icon,
-.heart,
-.sparks {
-  transform-origin: center;
-}
-
-.like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s forwards;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks-appear 0.3s ease-in 0.3s forwards;
-}

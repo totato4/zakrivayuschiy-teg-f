@@ -13,6 +13,8 @@
 
   --container-width: clamp(375px, 42.86vw + 214px, 700px);
 
+  --stroke-color: #ffffff;
+
   --button-text-color: #fff;
   --button-bg-color: #fff;
   --button-border-color: #000;
