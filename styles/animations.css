@@ -14,8 +14,11 @@
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
